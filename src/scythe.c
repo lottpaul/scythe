@@ -75,6 +75,7 @@ static struct option long_options[] = {
   {GETOPT_HELP_OPTION_DECL},
   {GETOPT_VERSION_OPTION_DECL},
   {NULL, 0, NULL, 0}
+	{"output-file", required_argument, 0, 'o'},
 };
 
 void usage(int status) {
