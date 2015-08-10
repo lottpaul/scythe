@@ -67,7 +67,7 @@ If you'd like to use standard out, it is recommended you use the
 
     scythe -a adapter_file.fasta --quiet sequences.fastq > trimmed_sequences.fastq
 
-To output the gzipped-fastq, use the --gzip-output or -g option :
+To output the trimmed fastq file to gzipped-fastq file, use the --gzip-output or -g option :
 
     scythe -g -a adapter_file.fasta sequences.fastq -o trimmed_sequences.fastq.gz
 
