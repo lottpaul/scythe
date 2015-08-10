@@ -57,7 +57,7 @@ Scythe can be run minimally with:
 
     scythe -a adapter_file.fasta -o trimmed_sequences.fasta sequences.fastq
 
-By default, the prior contamination rate is 0.05. This can be changed
+By default, the prior contamination rate is 0.3. This can be changed
 (and one is encouraged to do so!) with:
 
     scythe -a adapter_file.fasta -p 0.1 -o trimmed_sequences.fastq sequences.fastq
@@ -66,6 +66,10 @@ If you'd like to use standard out, it is recommended you use the
 `--quiet` option:
 
     scythe -a adapter_file.fasta --quiet sequences.fastq > trimmed_sequences.fastq
+
+To output the gzipped-fastq, use the --gzip-output or -g option :
+
+    scythe -g -a adapter_file.fasta sequences.fastq -o trimmed_sequences.fastq.gz
 
 Also, more detailed output about matches can be obtained with:
 
