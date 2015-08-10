@@ -290,6 +290,9 @@ int main(int argc, char *argv[]) {
 	if (output_fp != stdout && output_fp != NULL)
 		fclose(output_fp);
 	gzclose(fp);
+<<<<<<< HEAD
 	gzclose(output_gzip);
+=======
+>>>>>>> 19def0b7aed14ffa4f9704ebe0abbba2bd9a2961
 	return 0;
 }
